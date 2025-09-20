@@ -1,0 +1,98 @@
+﻿<UserControl x:Class="LightPatternSimulator.Views.nForceExterior_View_54"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LightPatternSimulator.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="350" d:DesignWidth="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush x:Name="display" ImageSource="{Binding LightbarViewModel.CurrentlySelectedLightbar.BoardImage}" Stretch="Uniform" />
+            <!--<ImageBrush x:Name="display" ImageSource="pack://application:,,,/image/product/Base_54.PNG" Stretch="Uniform" />-->
+        </Grid.Background>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="1*"/>
+
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Margin="-20,60,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Image x:Name="light11" Source="{Binding LightbarViewModel.Modules[0].MyBitmap}" Opacity="{Binding LightbarViewModel.Modules[0].Opacity}" Width="75" Height="75" Grid.Row="0" Grid.Column="0"/>
+            <Image x:Name="light21" Source="{Binding LightbarViewModel.Modules[9].MyBitmap}" Opacity="{Binding LightbarViewModel.Modules[9].Opacity}" Width="75" Height="75"  Grid.Row="2" Grid.Column="1" Margin="-55,0,0,0" />
+        </Grid>
+
+
+        <Grid Grid.ColumnSpan="3" Width="620"  HorizontalAlignment="Center" Margin="0,40,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="120"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Image x:Name="light12" Source="{Binding LightbarViewModel.Modules[1].MyBitmap}" Opacity="{Binding LightbarViewModel.Modules[1].Opacity}" Width="75" Height="75" Grid.Row="0" Grid.Column="0"/>
+            <Image x:Name="light22" Source="{Binding LightbarViewModel.Modules[10].MyBitmap}" Opacity="{Binding LightbarViewModel.Modules[10].Opacity}" Width="75" Height="75" Grid.Row="2" Grid.Column="0"/>
+
+            <Image x:Name="light13" Source="{Binding LightbarViewModel.Modules[2].MyBitmap}" Opacity="{Binding LightbarViewModel.Modules[2].Opacity}" Width="75" Height="75" Grid.Row="0" Grid.Column="1"/>
+            <Image x:Name="light23" Source="{Binding LightbarViewModel.Modules[11].MyBitmap}" Opacity="{Binding LightbarViewModel.Modules[11].Opacity}" Width="75" Height="75" Grid.Row="2" Grid.Column="1"/>
+
+            <Image x:Name="light14" Source="{Binding LightbarViewModel.Modules[3].MyBitmap}" Opacity="{Binding LightbarViewModel.Modules[3].Opacity}" Width="75" Height="75" Grid.Row="0" Grid.Column="2"/>
+            <Image x:Name="light24" Source="{Binding LightbarViewModel.Modules[12].MyBitmap}" Opacity="{Binding LightbarViewModel.Modules[12].Opacity}" Width="75" Height="75" Grid.Row="2" Grid.Column="2"/>
+
+            <Image x:Name="light15" Source="{Binding LightbarViewModel.Modules[4].MyBitmap}" Opacity="{Binding LightbarViewModel.Modules[4].Opacity}" Width="75" Height="75" Grid.Row="0" Grid.Column="3"/>
+            <Image x:Name="light25" Source="{Binding LightbarViewModel.Modules[13].MyBitmap}" Opacity="{Binding LightbarViewModel.Modules[13].Opacity}" Width="75" Height="75"  Grid.Row="2" Grid.Column="3"/>
+
+            <Image x:Name="light16" Source="{Binding LightbarViewModel.Modules[5].MyBitmap}" Opacity="{Binding LightbarViewModel.Modules[5].Opacity}" Width="75" Height="75" Grid.Row="0" Grid.Column="4"/>
+            <Image x:Name="light26" Source="{Binding LightbarViewModel.Modules[14].MyBitmap}" Opacity="{Binding LightbarViewModel.Modules[14].Opacity}" Width="75" Height="75"  Grid.Row="2" Grid.Column="4"/>
+
+            <Image x:Name="light17" Source="{Binding LightbarViewModel.Modules[6].MyBitmap}" Opacity="{Binding LightbarViewModel.Modules[6].Opacity}" Width="75" Height="75" Grid.Row="0" Grid.Column="5"/>
+            <Image x:Name="light27" Source="{Binding LightbarViewModel.Modules[15].MyBitmap}" Opacity="{Binding LightbarViewModel.Modules[15].Opacity}" Width="75" Height="75"  Grid.Row="2" Grid.Column="5"/>
+
+            <Image x:Name="light18" Source="{Binding LightbarViewModel.Modules[7].MyBitmap}" Opacity="{Binding LightbarViewModel.Modules[7].Opacity}" Width="75" Height="75" Grid.Row="0" Grid.Column="6"/>
+            <Image x:Name="light28" Source="{Binding LightbarViewModel.Modules[16].MyBitmap}" Opacity="{Binding LightbarViewModel.Modules[16].Opacity}" Width="75" Height="75"  Grid.Row="2" Grid.Column="6"/>
+
+        </Grid>
+
+        <Grid Grid.Column="2" Margin="60,60,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Image x:Name="light19" Source="{Binding LightbarViewModel.Modules[8].MyBitmap}" Opacity="{Binding LightbarViewModel.Modules[8].Opacity}" Width="75" Height="75" Grid.Row="0" Grid.Column="1" Margin="-60,0,0,0" />
+            <Image x:Name="light29" Source="{Binding LightbarViewModel.Modules[17].MyBitmap}" Opacity="{Binding LightbarViewModel.Modules[17].Opacity}" Width="75" Height="75"  Grid.Row="2" Grid.Column="0"/>
+        </Grid>
+    </Grid>
+
+</UserControl>

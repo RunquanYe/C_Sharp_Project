@@ -1,0 +1,365 @@
+﻿ <Window x:Class="LightPatternSimulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:local="clr-namespace:LightPatternSimulator"
+        xmlns:viewmodels="clr-namespace:LightPatternSimulator.ViewModels"
+        xmlns:diag="clr-namespace:System.Diagnostics;assembly=WindowsBase"
+        xmlns:views="clr-namespace:LightPatternSimulator.Views"
+        mc:Ignorable="d"
+        Title="Lightbar Simulation GUI" Height="650" Width="1150"
+         Background="LightGray">
+
+    <Window.Resources>
+        <Style TargetType="Button" x:Key="TabButton">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+           <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="8"  BorderBrush="#ccc" Width="120" Height= "30" Background="LightCyan"  BorderThickness="1,1,1,1" >
+                            <ContentPresenter x:Name="ContentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="{TemplateBinding Padding}" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="LightGray" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="Button" x:Key="controlButton">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="8"  BorderBrush="#ccc" Background="{TemplateBinding Background}"  BorderThickness="1,1,1,1" >
+                            <ContentPresenter x:Name="ContentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="{TemplateBinding Padding}" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="LightGray" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+
+        <Style TargetType="Button" x:Key="LongButton">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="8"  BorderBrush="#ccc" Width="265" Height= "30" Background="LightSkyBlue" BorderThickness="1,1,1,1" >
+                            <ContentPresenter x:Name="ContentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="{TemplateBinding Padding}" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="LightGray" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <DataTemplate x:Name="nForceExterior_24" DataType="{x:Type viewmodels:nForceExterior_ViewModel_24}">
+            <views:nForceExterior_View24 DataContext="{Binding}"/>
+        </DataTemplate>
+
+        <DataTemplate x:Name="nForceExterior_36" DataType="{x:Type viewmodels:nForceExterior_ViewModel_36}">
+            <views:nForceExterior_View_36 DataContext="{Binding}"/>
+        </DataTemplate>
+        <DataTemplate x:Name="nForceExterior_42" DataType="{x:Type viewmodels:nForceExterior_ViewModel_42}">
+            <views:nForceExterior_View_42 DataContext="{Binding}"/>
+        </DataTemplate>
+        <DataTemplate x:Name="nForceExterior_48" DataType="{x:Type viewmodels:nForceExterior_ViewModel_48}">
+            <views:nForceExterior_View_48 DataContext="{Binding}"/>
+        </DataTemplate>
+
+        <DataTemplate x:Name="nForceExterior_54" DataType="{x:Type viewmodels:nForceExterior_ViewModel_54}">
+            <views:nForceExterior_View_54 DataContext="{Binding}"/>
+        </DataTemplate>
+        <DataTemplate x:Name="nForceExterior_60" DataType="{x:Type viewmodels:nForceExterior_ViewModel_60}">
+            <views:nForceExterior_View_60 DataContext="{Binding}"/>
+        </DataTemplate>
+        <DataTemplate x:Name="nForceExterior_72" DataType="{x:Type viewmodels:nForceExterior_ViewModel_72}">
+            <views:nForceExterior_View_72 DataContext="{Binding}"/>
+        </DataTemplate>
+
+
+        <DataTemplate x:Name="mPower4inch_44" DataType="{x:Type viewmodels:mPowerLightbar_ViewModel_4inch44}">
+            <views:mPowerLightbar_View_4inch44 DataContext="{Binding}"/>
+        </DataTemplate>
+
+
+        <DataTemplate x:Name="mPower4inch_48" DataType="{x:Type viewmodels:mPowerLightbar_ViewModel_4inch48}">
+            <views:mPowerLightbar_View_4inch48 DataContext="{Binding}"/>
+        </DataTemplate>
+
+
+        <DataTemplate x:Name="mPower4inch_53" DataType="{x:Type viewmodels:mPowerLightbar_ViewModel_4inch53}">
+            <views:mPowerLightbar_View_4inch53 DataContext="{Binding}"/>
+        </DataTemplate>
+
+        <DataTemplate x:Name="mPower6inch_42" DataType="{x:Type viewmodels:mPowerLightbar_ViewModel_6inch42}">
+            <views:mPowerLightbar_View_6inch42 DataContext="{Binding}"/>
+        </DataTemplate>
+
+
+        <DataTemplate x:Name="mPower6inch_48" DataType="{x:Type viewmodels:mPowerLightbar_ViewModel_6inch48}">
+            <views:mPowerLightbar_View_6inch48 DataContext="{Binding}"/>
+        </DataTemplate>
+
+
+        <DataTemplate x:Name="mPower6inch_55" DataType="{x:Type viewmodels:mPowerLightbar_ViewModel_6inch55}">
+            <views:mPowerLightbar_View_6inch55 DataContext="{Binding}"/>
+        </DataTemplate>
+
+        <DataTemplate x:Name="nForceTrafficControl_Font6_Rear4" DataType="{x:Type viewmodels:nForceTrafficControl_ViewModel_Front6_Rear4}">
+            <views:nForceTrafficControl_View_Front6_Rear4 DataContext="{Binding}"/>
+        </DataTemplate>
+
+        <DataTemplate x:Name="nForceTrafficControl_Front6_Rear6" DataType="{x:Type viewmodels:nForceTrafficControl_ViewModel_Front6_Rear6}">
+            <views:nForceTrafficControl_View_Front6_Rear6 DataContext="{Binding}"/>
+        </DataTemplate>
+        
+        <DataTemplate x:Name="nForceTrafficControl_Font6_Rear8" DataType="{x:Type viewmodels:nForceTrafficControl_ViewModel_Front6_Rear8}">
+            <views:nForceTrafficControl_View_Front6_Rear8 DataContext="{Binding}"/>
+        </DataTemplate>
+
+
+        <DataTemplate x:Name="nForceTrafficControl_Font6_RearNone" DataType="{x:Type viewmodels:nForceTrafficControl_ViewModel_Front6_RearNone}">
+            <views:nForceTrafficControl_View_Front6_RearNone DataContext="{Binding}"/>
+        </DataTemplate>
+
+        <DataTemplate x:Name="nForceTrafficControl_Font8_Rear4" DataType="{x:Type viewmodels:nForceTrafficControl_ViewModel_Front8_Rear4}">
+            <views:nForceTrafficControl_View_Front8_Rear4 DataContext="{Binding}"/>
+        </DataTemplate>
+
+
+        <DataTemplate x:Name="nForceTrafficControl_Fon8_Rear6" DataType="{x:Type viewmodels:nForceTrafficControl_ViewModel_Front8_Rear6}">
+            <views:nForceTrafficControl_View_Front8_Rear6 DataContext="{Binding}"/>
+        </DataTemplate>
+
+        <DataTemplate x:Name="nForceTrafficControl_Front8_Rear8" DataType="{x:Type viewmodels:nForceTrafficControl_ViewModel_Front8_Rear8}">
+            <views:nForceTrafficControl_View_Front8_Rear8 DataContext="{Binding}"/>
+        </DataTemplate>
+
+        <DataTemplate x:Name="nForceTrafficControl_Font8_RearNone" DataType="{x:Type viewmodels:nForceTrafficControl_ViewModel_Front8_RearNone}">
+            <views:nForceTrafficControl_View_Front8_RearNone DataContext="{Binding}"/>
+        </DataTemplate>
+
+        <DataTemplate x:Name="nForceTrafficControl_FontNone_Rear8" DataType="{x:Type viewmodels:nForceTrafficControl_ViewModel_FrontNone_Rear8}">
+            <views:nForceTrafficControl_View_FrontNone_Rear8 DataContext="{Binding}"/>
+        </DataTemplate>
+
+        <DataTemplate x:Name="nForceTrafficControl_FontNone_Rear6" DataType="{x:Type viewmodels:nForceTrafficControl_ViewModel_FrontNone_Rear6}">
+            <views:nForceTrafficControl_View_FrontNone_Rear6 DataContext="{Binding}"/>
+        </DataTemplate>
+
+        <DataTemplate x:Name="nForceTrafficControl_FontNone_Rear4" DataType="{x:Type viewmodels:nForceTrafficControl_ViewModel_FrontNone_Rear4}">
+            <views:nForceTrafficControl_View_FrontNone_Rear4 DataContext="{Binding}"/>
+        </DataTemplate>
+
+        <DataTemplate x:Name="FordFrontVisor" DataType="{x:Type viewmodels:FordFrontVisor_ViewModel}">
+            <views:FordFrontVisor_View DataContext="{Binding}"/>
+        </DataTemplate>
+
+
+        <DataTemplate x:Name="to3D" DataType="{x:Type viewmodels:display3DView}">
+            <views:display3DView DataContext="{Binding}"/>
+        </DataTemplate>
+        
+    </Window.Resources>
+
+    <Border Padding="10">
+        <Grid>
+            <Grid VerticalAlignment="Top">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Product" Grid.Column="0" FontWeight="Bold" Margin="0 0 0 3"/>
+                    <TextBlock Text="LightBar Length(inches)" Visibility="{Binding SelectedViewModel.LightbarSizeVisibility}" Grid.Column="1" FontWeight="Bold" Margin="0 0 0 3"/>
+                    <TextBlock Text="LightBar Front Module" Visibility="{Binding SelectedViewModel.NumModulesVisibility}" Grid.Column="2" FontWeight="Bold"  Margin="0 0 0 3" />
+                    <TextBlock Text="Patterns" Grid.Column="3" FontWeight="Bold"   Margin="0 0 0 3" />
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+
+                    <ComboBox x:Name="product" Padding="2"  Grid.Column="0" Margin="0 0 30 0" ItemsSource="{Binding LightbarTypes.Keys}"
+                              SelectedItem="{Binding SelectedType}"                          
+                        />
+
+                    <ComboBox x:Name="length" Padding="2" Grid.Column="1" ItemsSource="{Binding SelectedList}" Margin="0 0 30 0"
+                            SelectedItem="{Binding SelectedSize}" Visibility="{Binding SelectedViewModel.LightbarSizeVisibility}"
+                        />
+                    <ComboBox x:Name="numModules" Padding="2" Grid.Column="2" ItemsSource="{Binding SelectedList}"
+                            SelectedItem="{Binding SelectedSize}" Visibility="{Binding SelectedViewModel.NumModulesVisibility}"  Margin="0 0 30 0"
+                        />
+                    <ComboBox x:Name="nForceInteriorRearModule" Padding="2" Grid.Column="3" ItemsSource="{Binding PatternList}"
+                            SelectedItem="{Binding SelectedPattern}" Margin="0 0 30 0"
+                        />
+                </Grid>
+            </Grid>
+
+            <DockPanel Height="350" LastChildFill="True" Margin="0,-90,0,0">
+                <Grid DockPanel.Dock="Right" VerticalAlignment="Center" Margin="25,0,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Color 1" Grid.Column="1" Margin="19,0,0,0" FontWeight="Bold"/>
+                        <TextBlock Text="Color 2" Grid.Column="2" Margin="19,0,0,0" FontWeight="Bold"/>
+                        <TextBlock Text="Color 3" Grid.Column="3" Margin="19,0,0,0" FontWeight="Bold"/>
+                    </Grid>
+
+
+                    <Grid Grid.Row="1" Margin="0,7,0,0">
+                        <Grid.Resources>
+                            <local:DebugDataBindingConverter x:Key="DebugBinding"/>
+                        </Grid.Resources>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Front" Grid.Column="0" FontWeight="Bold"/>
+                        <xctk:ColorPicker Name="frontColor1" Width="50" Grid.Column="1" Margin="15,0,0,0" DisplayColorAndName="True" SelectedColor="{Binding RegionColors[0]}" StandardColors="{Binding ColorList}" ShowAvailableColors="False" ShowTabHeaders="False" ShowStandardColors="True" />
+                        <xctk:ColorPicker Name="frontColor2" Width="50" Grid.Column="2" Margin="15,0,0,0" DisplayColorAndName="True" SelectedColor="{Binding RegionColors[1]}" StandardColors="{Binding ColorList}" ShowAvailableColors="False" ShowTabHeaders="False" ShowStandardColors="True" />
+                        <xctk:ColorPicker Name="frontColor3" Width="50" Grid.Column="3" Margin="15,0,0,0" DisplayColorAndName="True" SelectedColor="{Binding RegionColors[2]}" StandardColors="{Binding ColorList}" ShowAvailableColors="False" ShowTabHeaders="False" ShowStandardColors="True" />
+                    </Grid>
+
+
+                    <Grid Grid.Row="2" Margin="0,25,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Rear" Grid.Column="0" FontWeight="Bold"/>
+                        <xctk:ColorPicker Name="rearColor1" Width="50" Grid.Column="1" Margin="15,0,0,0" DisplayColorAndName="True" SelectedColor="{Binding RegionColors[3]}" StandardColors="{Binding ColorList}" ShowAvailableColors="False" ShowTabHeaders="False" ShowStandardColors="True" />
+                        <xctk:ColorPicker Name="rearColor2" Width="50" Grid.Column="2" Margin="15,0,0,0" DisplayColorAndName="True" SelectedColor="{Binding RegionColors[4]}" StandardColors="{Binding ColorList}" ShowAvailableColors="False" ShowTabHeaders="False" ShowStandardColors="True" />
+                        <xctk:ColorPicker Name="rearColor3" Width="50" Grid.Column="3" Margin="15,0,0,0" DisplayColorAndName="True" SelectedColor="{Binding RegionColors[5]}" StandardColors="{Binding ColorList}" ShowAvailableColors="False" ShowTabHeaders="False" ShowStandardColors="True" />
+                    </Grid>
+
+                    <Grid Grid.Row="3" Margin="0,25,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Driver" Grid.Column="0" FontWeight="Bold"/>
+                        <xctk:ColorPicker Name="driverColor1" Grid.Column="1" Width="50" Margin="11,0,0,0" DisplayColorAndName="True" SelectedColor="{Binding RegionColors[6]}" StandardColors="{Binding ColorList}" ShowAvailableColors="False" ShowTabHeaders="False" ShowStandardColors="True" />
+                        <xctk:ColorPicker Name="driverColor2" Grid.Column="2" Width="50" Margin="11,0,0,0" DisplayColorAndName="True" SelectedColor="{Binding RegionColors[7]}" StandardColors="{Binding ColorList}" ShowAvailableColors="False" ShowTabHeaders="False" ShowStandardColors="True" />
+                        <xctk:ColorPicker Name="driverColor3" Grid.Column="3" Width="50" Margin="11,0,0,0" DisplayColorAndName="True" SelectedColor="{Binding RegionColors[8]}" StandardColors="{Binding ColorList}" ShowAvailableColors="False" ShowTabHeaders="False" ShowStandardColors="True" />
+                    </Grid>
+
+                    <Grid Grid.Row="4" Margin="0,25,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Pass" Grid.Column="0" FontWeight="Bold"/>
+                        <xctk:ColorPicker Name="PassColor1" Width="50" Grid.Column="1" Margin="15,0,0,0" DisplayColorAndName="True" SelectedColor="{Binding RegionColors[9]}" StandardColors="{Binding ColorList}" ShowAvailableColors="False" ShowTabHeaders="False" ShowStandardColors="True" />
+                        <xctk:ColorPicker Name="PassColor2" Width="50" Grid.Column="2" Margin="15,0,0,0" DisplayColorAndName="True" SelectedColor="{Binding RegionColors[10]}" StandardColors="{Binding ColorList}" ShowAvailableColors="False" ShowTabHeaders="False" ShowStandardColors="True" />
+                        <xctk:ColorPicker Name="PassColor3" Width="50" Grid.Column="3" Margin="15,0,0,0" DisplayColorAndName="True" SelectedColor="{Binding RegionColors[11]}" StandardColors="{Binding ColorList}" ShowAvailableColors="False" ShowTabHeaders="False" ShowStandardColors="True" />
+
+                    </Grid>
+                </Grid>
+
+                <ContentControl Content="{Binding SelectedViewModel}"/>
+
+            </DockPanel>
+
+
+            <Grid VerticalAlignment="Bottom" Margin="0 50 0 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+
+                <Grid Grid.Column="0" Grid.Row="1" Grid.RowSpan="2" Width="300" Margin="0,5,0.333,0.293" HorizontalAlignment="Left">
+                    <StackPanel>
+                        <Border Padding="5">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Button x:Name="flashButton"  Style="{StaticResource TabButton}" Command="{Binding SelectedViewModel.LightbarViewModel.CmdFlash}" Content="Flash" Grid.Row="0" Grid.Column="0" Margin="10 5 10 5" />
+                                <Button x:Name="flashLowButton" Style="{StaticResource TabButton}" Command="{Binding SelectedViewModel.LightbarViewModel.CmdFlashLowPower}" Content="Flash Low Power" Grid.Row="0" Grid.Column="1" Margin="10 5 10 5" />
+                                <Button x:Name="steadyButton"  Style="{StaticResource TabButton}" Command="{Binding SelectedViewModel.LightbarViewModel.CmdSteady}" Content="Steady" Grid.Row="1" Grid.Column="0" Margin="10 5 10 5" />
+                                <Button x:Name="cruiseButton" Style="{StaticResource TabButton}" Command="{Binding SelectedViewModel.LightbarViewModel.CmdCruise}" Content="Cruise" Grid.Row="1" Grid.Column="1" Margin="10 5 10 5" />
+                            </Grid>
+                        </Border>
+                    </StackPanel>
+                </Grid>
+
+                <Button x:Name="ThreeDButton" Style="{StaticResource LongButton}" Content="3D Model" Grid.Column="0" Grid.Row="3"  Width="300" Margin="0,0,0.333,0.293" HorizontalAlignment="Left" />
+
+                <Grid Grid.Column="2" Grid.Row="3"  Grid.ColumnSpan="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="startButton" Style="{StaticResource controlButton}" Command="{Binding SelectedViewModel.LightbarViewModel.CmdStart}"  Content="Start" Grid.Column="0" Background="#FF2CDB26" Margin="0 0 15 0" />
+                    <Button x:Name="stopButton" Style="{StaticResource controlButton}"  Command="{Binding SelectedViewModel.LightbarViewModel.CmdStop}"   Content="Stop"  Grid.Column="1" Background="#FFF22D19" />
+                </Grid>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

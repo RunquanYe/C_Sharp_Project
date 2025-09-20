@@ -1,2 +1,4 @@
 # C-_Demo
-这是我在美国密歇根州一家车载霓虹灯公司“Sound Off Signal”参加的实习项目，制造一个以C#和WPF Windows桌面软件，一个车载霓虹灯模拟器，展示个别系列公司产品的霓虹灯闪烁效果，方便公司可以预览效果提高生产设计环节和向顾客进行产品宣传。
++ 这是我在美国密歇根州一家车载霓虹灯公司“Sound Off Signal”参加的实习项目，制造一个以C#和WPF Windows桌面软件，一个车载霓虹灯模拟器，展示个别系列公司产品的霓虹灯闪烁效果，方便公司可以预览效果提高生产设计环节和向顾客进行产品宣传。
+
+<div align="center"><img id="patient-service_H2DB_WebConsoleLogin" src="./imgs/Figure1.png" alt="How does Docker work"></div>

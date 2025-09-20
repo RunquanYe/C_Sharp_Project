@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B793DCE7-F522-4FBE-A647-7740B874A8B5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>LightPatternSimulator</RootNamespace>
+    <AssemblyName>LightPatternSimulator</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="DebugDataBindingConverter.cs" />
+    <Compile Include="DebugTraceListener.cs" />
+    <Compile Include="Data\DLL.cs" />
+    <Compile Include="ViewModels\BaseProductViewModel.cs" />
+    <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\display3DView.cs" />
+    <Compile Include="ViewModels\FordFrontVisor_ViewModel.cs" />
+    <Compile Include="ViewModels\LightbarViewModel.cs" />
+    <Compile Include="ViewModels\nForceTrafficControl_ViewModel_Front6_Rear6.cs" />
+    <Compile Include="ViewModels\nForceTrafficControl_ViewModel_Front8_Rear8.cs" />
+    <Compile Include="ViewModels\mPowerLightbar_ViewModel_6inch42.cs" />
+    <Compile Include="ViewModels\mPowerLightbar_ViewModel_4inch44.cs" />
+    <Compile Include="ViewModels\mPowerLightbar_ViewModel_4inch48.cs" />
+    <Compile Include="ViewModels\mPowerLightbar_ViewModel_4inch53.cs" />
+    <Compile Include="ViewModels\mPowerLightbar_ViewModel_6inch48.cs" />
+    <Compile Include="ViewModels\mPowerLightbar_ViewModel_6inch55.cs" />
+    <Compile Include="ViewModels\nForceExterior_ViewModel_24.cs" />
+    <Compile Include="ViewModels\nForceExterior_ViewModel_36.cs" />
+    <Compile Include="ViewModels\nForceExterior_ViewModel_42.cs" />
+    <Compile Include="ViewModels\nForceExterior_ViewModel_48.cs" />
+    <Compile Include="ViewModels\nForceExterior_ViewModel_54.cs" />
+    <Compile Include="ViewModels\nForceExterior_ViewModel_60.cs" />
+    <Compile Include="ViewModels\nForceExterior_ViewModel_72.cs" />
+    <Compile Include="ViewModels\nForceTrafficControl_ViewModel_Front6_Rear4.cs" />
+    <Compile Include="ViewModels\nForceTrafficControl_ViewModel_Front6_Rear8.cs" />
+    <Compile Include="ViewModels\nForceTrafficControl_ViewModel_Front6_RearNone.cs" />
+    <Compile Include="ViewModels\nForceTrafficControl_ViewModel_Front8_Rear4.cs" />
+    <Compile Include="ViewModels\nForceTrafficControl_ViewModel_Front8_Rear6.cs" />
+    <Compile Include="ViewModels\nForceTrafficControl_ViewModel_Front8_RearNone.cs" />
+    <Compile Include="ViewModels\nForceTrafficControl_ViewModel_FrontNone_Rear4.cs" />
+    <Compile Include="ViewModels\nForceTrafficControl_ViewModel_FrontNone_Rear6.cs" />
+    <Compile Include="ViewModels\nForceTrafficControl_ViewModel_FrontNone_Rear8.cs" />
+    <Compile Include="ViewModels\RelayCommand.cs" />
+    <Compile Include="ViewModels\LightbarViewModelContainer.cs" />
+    <Compile Include="Views\display3DView.xaml.cs">
+      <DependentUpon>display3DView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FordFrontVisor_View.xaml.cs">
+      <DependentUpon>FordFrontVisor_View.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\mPowerLightbar_View_4inch44.xaml.cs">
+      <DependentUpon>mPowerLightbar_View_4inch44.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\mPowerLightbar_View_4inch48.xaml.cs">
+      <DependentUpon>mPowerLightbar_View_4inch48.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\mPowerLightbar_View_4inch53.xaml.cs">
+      <DependentUpon>mPowerLightbar_View_4inch53.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\mPowerLightbar_View_6inch42.xaml.cs">
+      <DependentUpon>mPowerLightbar_View_6inch42.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\mPowerLightbar_View_6inch48.xaml.cs">
+      <DependentUpon>mPowerLightbar_View_6inch48.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\mPowerLightbar_View_6inch55.xaml.cs">
+      <DependentUpon>mPowerLightbar_View_6inch55.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\nForceExterior_View_24.xaml.cs">
+      <DependentUpon>nForceExterior_View_24.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\nForceExterior_View_36.xaml.cs">
+      <DependentUpon>nForceExterior_View_36.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\nForceExterior_View_42.xaml.cs">
+      <DependentUpon>nForceExterior_View_42.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\nForceExterior_View_48.xaml.cs">
+      <DependentUpon>nForceExterior_View_48.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\nForceExterior_View_54.xaml.cs">
+      <DependentUpon>nForceExterior_View_54.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\nForceExterior_View_60.xaml.cs">
+      <DependentUpon>nForceExterior_View_60.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\nForceExterior_View_72.xaml.cs">
+      <DependentUpon>nForceExterior_View_72.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\nForceTrafficControl_View_Front6_Rear6.xaml.cs">
+      <DependentUpon>nForceTrafficControl_View_Front6_Rear6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\nForceTrafficControl_View_Front8_Rear8.xaml.cs">
+      <DependentUpon>nForceTrafficControl_View_Front8_Rear8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\nForceTrafficControl_View_Front6_Rear4.xaml.cs">
+      <DependentUpon>nForceTrafficControl_View_Front6_Rear4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\nForceTrafficControl_View_Front6_RearNone.xaml.cs">
+      <DependentUpon>nForceTrafficControl_View_Front6_RearNone.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\nForceTrafficControl_View_Front8_Rear4.xaml.cs">
+      <DependentUpon>nForceTrafficControl_View_Front8_Rear4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\nForceTrafficControl_View_Front8_Rear6.xaml.cs">
+      <DependentUpon>nForceTrafficControl_View_Front8_Rear6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\nForceTrafficControl_View_Front8_RearNone.xaml.cs">
+      <DependentUpon>nForceTrafficControl_View_Front8_RearNone.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\nForceTrafficControl_View_Front6_Rear8.xaml.cs">
+      <DependentUpon>nForceTrafficControl_View_Front6_Rear8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\nForceTrafficControl_View_FrontNone_Rear4.xaml.cs">
+      <DependentUpon>nForceTrafficControl_View_FrontNone_Rear4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\nForceTrafficControl_View_FrontNone_Rear6.xaml.cs">
+      <DependentUpon>nForceTrafficControl_View_FrontNone_Rear6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\nForceTrafficControl_View_FrontNone_Rear8.xaml.cs">
+      <DependentUpon>nForceTrafficControl_View_FrontNone_Rear8.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Views\display3DView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FordFrontVisor_View.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\mPowerLightbar_View_4inch44.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\mPowerLightbar_View_4inch48.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\mPowerLightbar_View_4inch53.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\mPowerLightbar_View_6inch42.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\mPowerLightbar_View_6inch48.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\mPowerLightbar_View_6inch55.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\nForceExterior_View_24.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\nForceExterior_View_36.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\nForceExterior_View_42.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\nForceExterior_View_48.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\nForceExterior_View_54.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\nForceExterior_View_60.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\nForceExterior_View_72.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\nForceTrafficControl_View_Front6_Rear6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\nForceTrafficControl_View_Front8_Rear8.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\nForceTrafficControl_View_Front6_Rear4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\nForceTrafficControl_View_Front6_RearNone.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\nForceTrafficControl_View_Front8_Rear4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\nForceTrafficControl_View_Front8_Rear6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\nForceTrafficControl_View_Front8_RearNone.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\nForceTrafficControl_View_Front6_Rear8.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\nForceTrafficControl_View_FrontNone_Rear4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\nForceTrafficControl_View_FrontNone_Rear6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\nForceTrafficControl_View_FrontNone_Rear8.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="lightbars\Lightbar.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="GraphicsModels\LightBars\EMPLB-6INX48-solid.obj" />
+    <None Include="GraphicsModels\Vehicles\cobraR.obj" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="resources\jsons\lightbar1.JSON" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Catel.Core">
+      <Version>5.11.2</Version>
+    </PackageReference>
+    <PackageReference Include="Extended.Wpf.Toolkit">
+      <Version>3.6.0</Version>
+    </PackageReference>
+    <PackageReference Include="HelixToolkit">
+      <Version>2.10.0</Version>
+    </PackageReference>
+    <PackageReference Include="HelixToolkit.Wpf">
+      <Version>2.10.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Threading">
+      <Version>16.4.16</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.3</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\color\Black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\product\mPower-4inch.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\product\mPower-6inch.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\color\Blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\color\Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\color\White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\product\Base_24.png" />
+    <Resource Include="image\product\Base_30.png" />
+    <Resource Include="image\product\Base_36.png" />
+    <Resource Include="image\product\Base_42.png" />
+    <Resource Include="image\product\Base_48.png" />
+    <Resource Include="image\product\Base_54.png" />
+    <Resource Include="image\product\Base_60.png" />
+    <Resource Include="image\product\Base_66.png" />
+    <Resource Include="image\product\Base_72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\product\nForceTrafficControl_6inch.png" />
+    <Resource Include="image\product\nForceTrafficControl_8inch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\color\Yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\color\Green.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

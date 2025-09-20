@@ -1,0 +1,742 @@
+﻿[{"LightbarType":"nForce Exterior", 
+	"Size":"24", 
+	"NumModules": 8, 
+	"BoardImageFileName": "Base_24",
+	"Modules":
+	[
+		{"ModuleName" :"Front Driver Corner", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName": "Front Driver Inboard 1", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},  
+		{"ModuleName" :"Front Passenger Inboard 1", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Front Passenger Corner", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Rear Driver Corner", "ModuleNumber": "5", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName": "Rear Driver Inboard 1", "ModuleNumber": "6", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},  
+		{"ModuleName" :"Rear Passenger Inboard 1", "ModuleNumber": "7", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		{"ModuleName" :"Rear Passenger Corner", "ModuleNumber": "8", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		], 
+	"LightbarPatterns":
+	[
+		{
+			"PatternName":"Demo",
+			"PatternDescription":"Pattern for the Sprint 2 Demo",
+			"LightCombinations":
+			[
+				["Red 100", "Red 100", "Red 100", "Blue 0", "Blue 0", "Blue 0", "None 0", "None 0", "Blue 100", "Red  100", "None 0", "None 0"],
+				["Red 0", "Red 0", "Red 0", "Blue 100", "Blue 100", "Blue 100", "None 0", "None 0", "Blue 100", "Red  100", "None 0", "None 0"],
+				["Red 100", "Red 100", "Red 100", "Blue 0", "Blue 0", "Blue 0", "None 0", "Blue 100", "None 0", "None 0", "Red 100", "None 0"],
+				["Red 0", "Red 0", "Red 0", "Blue 100", "Blue 100", "Blue 100","None 0", "Blue 100", "None 0", "None 0", "Red 100", "None 0"],
+				["Red 100", "Red 100", "Red 100", "Blue 0", "Blue 0", "Blue 0","Blue 100", "None 0", "None 0", "None 0", "None 0", "Red 100"],
+				["Red 0", "Red 0", "Red 0", "Blue 100", "Blue 100", "Blue 100","Blue 100", "None 0", "None 0", "None 0", "None 0", "Red 100"],
+			], 
+			"Milliseconds":[80, 200, 100, 200, 80, 80]
+		},
+
+		{
+			"PatternName":"KITT",
+			"PatternDescription":"Pattern that mimics K.I.T.T from Knight Rider",
+			"LightCombinations":
+			[
+				["Red 100", "Red 0", "Red 0", "Red 0", "Red 0", "Red 0", "Red 100", "Red 0", "Red 0", "Red 0", "Red 0", "Red 0"], 
+				["Red 0", "Red 100", "Red 0", "Red 0", "Red 0", "Red 0", "Red 0", "Red 100", "Red 0", "Red 0", "Red 0", "Red 0"], 
+				["Red 0", "Red 0", "Red 100", "Red 0", "Red 0", "Red 0", "Red 0", "Red 0", "Red 100", "Red 0", "Red 0", "Red 0"],
+				["Red 0", "Red 0", "Red 0", "Red 100", "Red 0", "Red 0", "Red 0", "Red 0", "Red 0", "Red 100", "Red 0", "Red 0"], 
+				["Red 0", "Red 0", "Red 0", "Red 0", "Red 100", "Red 0", "Red 0", "Red 0", "Red 0", "Red 0", "Red 100", "Red 0"], 
+				["Red 0", "Red 0", "Red 0", "Red 0", "Red 0", "Red 100", "Red 0", "Red 0", "Red 0", "Red 0", "Red 0", "Red 100"],
+				["Red 0", "Red 0", "Red 0", "Red 0", "Red 100", "Red 0", "Red 0", "Red 0", "Red 0", "Red 0", "Red 100", "Red 0"], 
+				["Red 0", "Red 0", "Red 0", "Red 100", "Red 0", "Red 0", "Red 0", "Red 0", "Red 0", "Red 100", "Red 0", "Red 0"],
+				["Red 0", "Red 0", "Red 100", "Red 0", "Red 0", "Red 0", "Red 0", "Red 0", "Red 100", "Red 0", "Red 0", "Red 0"],
+				["Red 0", "Red 100", "Red 0", "Red 0", "Red 0", "Red 0", "Red 0", "Red 100", "Red 0", "Red 0", "Red 0", "Red 0"], 
+			], 
+			"Milliseconds":[400, 300, 300, 300, 300, 400, 300, 300, 300, 300]
+		}
+	] 
+},
+
+{"LightbarType":"nForce Exterior", 
+	"Size":"36", 
+	"NumModules": 12, 
+	"BoardImageFileName": "Base_36",
+	"Modules":
+	[
+		{"ModuleName" :"Front Driver Corner", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName": "Front Driver Inboard 1", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName": "Front Driver Inboard 2", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 2", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Front Passenger Inboard 1", "ModuleNumber": "5", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Front Passenger Corner", "ModuleNumber": "6", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Rear Driver Corner", "ModuleNumber": "7", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName": "Rear Driver Inboard 1", "ModuleNumber": "8", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 2", "ModuleNumber": "9", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 2", "ModuleNumber": "10", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 1", "ModuleNumber": "11", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		{"ModuleName" :"Rear Passenger Corner", "ModuleNumber": "12", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		], 
+	"LightbarPatterns":[]
+},
+
+{"LightbarType":"nForce Exterior", 
+	"Size":"42", 
+	"NumModules": 14, 
+	"BoardImageFileName": "Base_42",
+	"Modules":
+	[
+		{"ModuleName" :"Front Driver Corner", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName": "Front Driver Inboard 1", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 2", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Inboard 3", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 2", "ModuleNumber": "5", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 1", "ModuleNumber": "6", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Front Passenger Corner", "ModuleNumber": "7", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Rear Driver Corner", "ModuleNumber": "8", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName": "Rear Driver Inboard 1", "ModuleNumber": "9", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 2", "ModuleNumber": "10", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Inboard 3", "ModuleNumber": "11", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 2", "ModuleNumber": "12", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 1", "ModuleNumber": "13", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		{"ModuleName" :"Rear Passenger Corner", "ModuleNumber": "14", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+	],
+	"LightbarPatterns":[]
+},
+
+{"LightbarType":"nForce Exterior", 
+	"Size":"48", 
+	"NumModules": 16, 
+	"BoardImageFileName": "Base_48",
+	"Modules":
+	[
+		{"ModuleName" :"Front Driver Corner", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName": "Front Driver Inboard 1", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 2", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 3", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 3", "ModuleNumber": "5", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 2", "ModuleNumber": "6", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 1", "ModuleNumber": "7", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Front Passenger Corner", "ModuleNumber": "8", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Rear Driver Corner", "ModuleNumber": "9", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName": "Rear Driver Inboard 1", "ModuleNumber": "10", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 2", "ModuleNumber": "11", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 3", "ModuleNumber": "12", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 3", "ModuleNumber": "13", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 2", "ModuleNumber": "14", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 1", "ModuleNumber": "15", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		{"ModuleName" :"Rear Passenger Corner", "ModuleNumber": "16", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		], 
+	"LightbarPatterns":[]
+},
+
+{"LightbarType":"nForce Exterior", 
+	"Size":"54", 
+	"NumModules": 18, 
+	"BoardImageFileName": "Base_54",
+	"Modules":
+	[
+		{"ModuleName" :"Front Driver Corner", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName": "Front Driver Inboard 1", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 2", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 3", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Inboard 4", "ModuleNumber": "5", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 3", "ModuleNumber": "6", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 2", "ModuleNumber": "7", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 1", "ModuleNumber": "8", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Front Passenger Corner", "ModuleNumber": "9", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Rear Driver Corner", "ModuleNumber": "10", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName": "Rear Driver Inboard 1", "ModuleNumber": "11", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 2", "ModuleNumber": "12", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 3", "ModuleNumber": "13", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Inboard 4", "ModuleNumber": "14", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 3", "ModuleNumber": "15", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 2", "ModuleNumber": "16", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 1", "ModuleNumber": "17", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		{"ModuleName" :"Rear Passenger Corner", "ModuleNumber": "18", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		], 
+	"LightbarPatterns":[]
+},
+
+{"LightbarType":"nForce Exterior", 
+	"Size":"60", 
+	"NumModules": 20, 
+	"BoardImageFileName": "Base_60",
+	"Modules":
+	[
+		{"ModuleName" :"Front Driver Corner", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName": "Front Driver Inboard 1", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 2", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 3", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 4", "ModuleNumber": "5", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 4", "ModuleNumber": "6", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 3", "ModuleNumber": "7", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 2", "ModuleNumber": "8", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 1", "ModuleNumber": "9", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Front Passenger Corner", "ModuleNumber": "10", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Rear Driver Corner", "ModuleNumber": "11", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName": "Rear Driver Inboard 1", "ModuleNumber": "12", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 2", "ModuleNumber": "13", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 3", "ModuleNumber": "14", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 4", "ModuleNumber": "15", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 4", "ModuleNumber": "16", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 3", "ModuleNumber": "17", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 2", "ModuleNumber": "18", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 1", "ModuleNumber": "19", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		{"ModuleName" :"Rear Passenger Corner", "ModuleNumber": "20", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		], 
+	"LightbarPatterns":[]
+},
+
+{"LightbarType":"nForce Exterior", 
+	"Size":"72", 
+	"NumModules": 24, 
+	"BoardImageFileName": "Base_72",
+	"Modules":
+	[
+		{"ModuleName" :"Front Driver Corner", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName": "Front Driver Inboard 1", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 2", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 3", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 4", "ModuleNumber": "5", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 5", "ModuleNumber": "6", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 5", "ModuleNumber": "7", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 4", "ModuleNumber": "8", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 3", "ModuleNumber": "9", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 2", "ModuleNumber": "10", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 1", "ModuleNumber": "11", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Front Passenger Corner", "ModuleNumber": "12", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Rear Driver Corner", "ModuleNumber": "13", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName": "Rear Driver Inboard 1", "ModuleNumber": "14", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 2", "ModuleNumber": "15", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 3", "ModuleNumber": "16", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 4", "ModuleNumber": "17", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 5", "ModuleNumber": "18", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 5", "ModuleNumber": "19", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 4", "ModuleNumber": "20", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 3", "ModuleNumber": "21", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 2", "ModuleNumber": "22", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 1", "ModuleNumber": "23", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		{"ModuleName" :"Rear Passenger Corner", "ModuleNumber": "24", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		], 
+	"LightbarPatterns":[]
+},
+{"LightbarType":"mPower 4inch", 
+	"Size":"44", 
+	"NumModules": 22, 
+	"BoardImageFileName": "mPower-4inch",
+	"Modules":
+	[
+		{"ModuleName" :"Driver Corner", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Corner", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName": "Front Driver Inboard 1", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 2", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 3", "ModuleNumber": "5", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 4", "ModuleNumber": "6", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 4", "ModuleNumber": "7", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 3", "ModuleNumber": "8", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 2", "ModuleNumber": "9", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 1", "ModuleNumber": "10", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Front Passenger Corner", "ModuleNumber": "11", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Rear Driver Corner", "ModuleNumber": "12", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName": "Rear Driver Inboard 1", "ModuleNumber": "13", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 2", "ModuleNumber": "14", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 3", "ModuleNumber": "15", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 4", "ModuleNumber": "16", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 4", "ModuleNumber": "17", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 3", "ModuleNumber": "18", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 2", "ModuleNumber": "19", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 1", "ModuleNumber": "20", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		{"ModuleName" :"Rear Passenger Corner", "ModuleNumber": "21", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		{"ModuleName" :"Passenger Corner", "ModuleNumber": "22", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}
+		], 
+	"LightbarPatterns":[]
+},
+{"LightbarType":"mPower 4inch", 
+	"Size":"48", 
+	"NumModules": 24, 
+	"BoardImageFileName": "mPower-4inch",
+	"Modules":
+	[
+		{"ModuleName" :"Driver Corner", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Corner", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName": "Front Driver Inboard 1", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 2", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 3", "ModuleNumber": "5", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 4", "ModuleNumber": "6", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Inboard 5", "ModuleNumber": "7", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 4", "ModuleNumber": "8", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 3", "ModuleNumber": "9", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 2", "ModuleNumber": "10", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 1", "ModuleNumber": "11", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Front Passenger Corner", "ModuleNumber": "12", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Rear Driver Corner", "ModuleNumber": "13", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName": "Rear Driver Inboard 1", "ModuleNumber": "14", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 2", "ModuleNumber": "15", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 3", "ModuleNumber": "16", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 4", "ModuleNumber": "17", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Inboard 5", "ModuleNumber": "18", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 4", "ModuleNumber": "19", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 3", "ModuleNumber": "20", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 2", "ModuleNumber": "21", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 1", "ModuleNumber": "22", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		{"ModuleName" :"Rear Passenger Corner", "ModuleNumber": "23", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		{"ModuleName" :"Passenger Corner", "ModuleNumber": "24", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}
+		], 
+	"LightbarPatterns":[]
+},
+{"LightbarType":"mPower 4inch", 
+	"Size":"53", 
+	"NumModules": 26, 
+	"BoardImageFileName": "mPower-4inch",
+	"Modules":
+	[
+		{"ModuleName" :"Driver Corner", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Corner", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName": "Front Driver Inboard 1", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 2", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 3", "ModuleNumber": "5", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 4", "ModuleNumber": "6", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 5", "ModuleNumber": "7", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Front Passenger Inboard 5", "ModuleNumber": "8", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 4", "ModuleNumber": "9", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 3", "ModuleNumber": "10", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 2", "ModuleNumber": "11", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 1", "ModuleNumber": "12", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Front Passenger Corner", "ModuleNumber": "13", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Rear Driver Corner", "ModuleNumber": "14", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName": "Rear Driver Inboard 1", "ModuleNumber": "15", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 2", "ModuleNumber": "16", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 3", "ModuleNumber": "17", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 4", "ModuleNumber": "18", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 5", "ModuleNumber": "19", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 5", "ModuleNumber": "20", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 4", "ModuleNumber": "21", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 3", "ModuleNumber": "22", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 2", "ModuleNumber": "23", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 1", "ModuleNumber": "24", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		{"ModuleName" :"Rear Passenger Corner", "ModuleNumber": "25", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		{"ModuleName" :"Passenger Corner", "ModuleNumber": "26", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}
+		], 
+	"LightbarPatterns":[]
+},
+{"LightbarType":"mPower 6inch", 
+	"Size":"42", 
+	"NumModules": 16, 
+	"BoardImageFileName": "mPower-6inch",
+	"Modules":
+	[
+		{"ModuleName" :"Driver Corner", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Corner", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName": "Front Driver Inboard 1", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 2", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Inboard 3", "ModuleNumber": "5", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 2", "ModuleNumber": "6", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 1", "ModuleNumber": "7", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Front Passenger Corner", "ModuleNumber": "8", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Rear Driver Corner", "ModuleNumber": "9", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName": "Rear Driver Inboard 1", "ModuleNumber": "10", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 2", "ModuleNumber": "11", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Inboard 3", "ModuleNumber": "12", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 2", "ModuleNumber": "13", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 1", "ModuleNumber": "14", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		{"ModuleName" :"Rear Passenger Corner", "ModuleNumber": "15", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		{"ModuleName" :"Passenger Corner", "ModuleNumber": "16", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}
+		], 
+	"LightbarPatterns":[]
+},
+{"LightbarType":"mPower 6inch", 
+	"Size":"48", 
+	"NumModules": 18, 
+	"BoardImageFileName": "mPower-6inch",
+	"Modules":
+	[
+		{"ModuleName" :"Driver Corner", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Corner", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName": "Front Driver Inboard 1", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 2", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 3", "ModuleNumber": "5", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 3", "ModuleNumber": "6", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 2", "ModuleNumber": "7", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 1", "ModuleNumber": "8", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Front Passenger Corner", "ModuleNumber": "9", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Rear Driver Corner", "ModuleNumber": "10", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName": "Rear Driver Inboard 1", "ModuleNumber": "11", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 2", "ModuleNumber": "12", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 3", "ModuleNumber": "13", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 3", "ModuleNumber": "14", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 2", "ModuleNumber": "15", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 1", "ModuleNumber": "16", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		{"ModuleName" :"Rear Passenger Corner", "ModuleNumber": "17", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		{"ModuleName" :"Passenger Corner", "ModuleNumber": "18", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}
+		], 
+	"LightbarPatterns":[]
+},
+{"LightbarType":"mPower 6inch", 
+	"Size":"55", 
+	"NumModules": 20, 
+	"BoardImageFileName": "mPower-6inch",
+	"Modules":
+	[
+		{"ModuleName" :"Driver Corner", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Corner", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName": "Front Driver Inboard 1", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 2", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 3", "ModuleNumber": "5", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Inboard 4", "ModuleNumber": "6", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 3", "ModuleNumber": "7", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 2", "ModuleNumber": "8", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 1", "ModuleNumber": "9", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Front Passenger Corner", "ModuleNumber": "10", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName" :"Rear Driver Corner", "ModuleNumber": "11", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName": "Rear Driver Inboard 1", "ModuleNumber": "12", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 2", "ModuleNumber": "13", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 3", "ModuleNumber": "14", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Inboard 4", "ModuleNumber": "15", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 3", "ModuleNumber": "16", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 2", "ModuleNumber": "17", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 1", "ModuleNumber": "18", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		{"ModuleName" :"Rear Passenger Corner", "ModuleNumber": "19", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		{"ModuleName" :"Passenger Corner", "ModuleNumber": "20", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}
+		], 
+	"LightbarPatterns":[]
+},
+
+
+{"LightbarType":"nForce Interior", 
+	"Size":"None 4", 
+	"NumModules": 4, 
+	"BoardImageFileName": "mPower-4inch",
+	"Modules":
+	[
+		{"ModuleName": "Rear Driver Inboard 1", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 2", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 2", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 1", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		], 
+	"LightbarPatterns":[]
+},
+
+{"LightbarType":"nForce Interior", 
+	"Size":"None 6", 
+	"NumModules": 6, 
+	"BoardImageFileName": "mPower-4inch",
+	"Modules":
+	[
+		{"ModuleName": "Rear Driver Inboard 1", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 2", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 3", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 3", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 2", "ModuleNumber": "5", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 1", "ModuleNumber": "6", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		], 
+	"LightbarPatterns":[]
+},
+
+{"LightbarType":"nForce Interior", 
+	"Size":"None 8", 
+	"NumModules": 8, 
+	"BoardImageFileName": "mPower-4inch",
+	"Modules":
+	[
+		{"ModuleName": "Rear Driver Inboard 1", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 2", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 3", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 4", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 4", "ModuleNumber": "5", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 3", "ModuleNumber": "6", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 2", "ModuleNumber": "7", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 1", "ModuleNumber": "8", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		], 
+	"LightbarPatterns":[]
+},
+
+{"LightbarType":"nForce Interior", 
+	"Size":"None Interior", 
+	"NumModules": 8, 
+	"BoardImageFileName": "mPower-4inch",
+	"Modules":
+	[
+		{"ModuleName": "Rear Driver Inboard 1", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 2", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 3", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 4", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 4", "ModuleNumber": "5", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 3", "ModuleNumber": "6", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 2", "ModuleNumber": "7", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 1", "ModuleNumber": "8", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		], 
+	"LightbarPatterns":[]
+},
+
+{"LightbarType":"nForce Interior", 
+	"Size":"6 None", 
+	"NumModules": 6, 
+	"BoardImageFileName": "mPower-4inch",
+	"Modules":
+	[
+		{"ModuleName": "Front Driver Inboard 1", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 2", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 3", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 3", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 2", "ModuleNumber": "5", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 1", "ModuleNumber": "6", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		], 
+	"LightbarPatterns":[]
+},
+
+{"LightbarType":"nForce Interior", 
+	"Size":"6 4", 
+	"NumModules": 10, 
+	"BoardImageFileName": "mPower-4inch",
+	"Modules":
+	[
+		{"ModuleName": "Front Driver Inboard 1", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 2", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 3", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 3", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 2", "ModuleNumber": "5", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 1", "ModuleNumber": "6", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName": "Rear Driver Inboard 1", "ModuleNumber": "7", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 2", "ModuleNumber": "8", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 2", "ModuleNumber": "9", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 1", "ModuleNumber": "10", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		], 
+	"LightbarPatterns":[]
+},
+
+
+{"LightbarType":"nForce Interior", 
+	"Size":"6 6", 
+	"NumModules": 12, 
+	"BoardImageFileName": "mPower-4inch",
+	"Modules":
+	[
+		{"ModuleName": "Front Driver Inboard 1", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 2", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 3", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 3", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 2", "ModuleNumber": "5", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 1", "ModuleNumber": "6", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName": "Rear Driver Inboard 1", "ModuleNumber": "7", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 2", "ModuleNumber": "8", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 3", "ModuleNumber": "9", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 3", "ModuleNumber": "10", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 2", "ModuleNumber": "11", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 1", "ModuleNumber": "12", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		], 
+	"LightbarPatterns":[]
+},
+
+
+
+{"LightbarType":"nForce Interior", 
+	"Size":"6 8", 
+	"NumModules": 14, 
+	"BoardImageFileName": "mPower-4inch",
+	"Modules":
+	[
+		{"ModuleName": "Front Driver Inboard 1", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 2", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 3", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 3", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 2", "ModuleNumber": "5", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 1", "ModuleNumber": "6", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName": "Rear Driver Inboard 1", "ModuleNumber": "7", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 2", "ModuleNumber": "8", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 3", "ModuleNumber": "9", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 4", "ModuleNumber": "10", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 4", "ModuleNumber": "11", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 3", "ModuleNumber": "12", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 2", "ModuleNumber": "13", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 1", "ModuleNumber": "14", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		], 
+	"LightbarPatterns":[]
+},
+
+{"LightbarType":"nForce Interior", 
+	"Size":"6 Interior", 
+	"NumModules": 14, 
+	"BoardImageFileName": "mPower-4inch",
+	"Modules":
+	[
+		{"ModuleName": "Front Driver Inboard 1", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 2", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 3", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 3", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 2", "ModuleNumber": "5", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 1", "ModuleNumber": "6", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName": "Rear Driver Inboard 1", "ModuleNumber": "7", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 2", "ModuleNumber": "8", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 3", "ModuleNumber": "9", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 4", "ModuleNumber": "10", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 4", "ModuleNumber": "11", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 3", "ModuleNumber": "12", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 2", "ModuleNumber": "13", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 1", "ModuleNumber": "14", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		], 
+	"LightbarPatterns":[]
+},
+
+
+{"LightbarType":"nForce Interior", 
+	"Size":"8 None", 
+	"NumModules": 8, 
+	"BoardImageFileName": "mPower-4inch",
+	"Modules":
+	[
+		{"ModuleName": "Front Driver Inboard 1", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 2", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 3", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 4", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 4", "ModuleNumber": "5", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 3", "ModuleNumber": "6", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 2", "ModuleNumber": "7", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 1", "ModuleNumber": "8", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}
+		], 
+	"LightbarPatterns":[]
+},
+
+{"LightbarType":"nForce Interior", 
+	"Size":"8 4", 
+	"NumModules": 12, 
+	"BoardImageFileName": "mPower-4inch",
+	"Modules":
+	[
+		{"ModuleName": "Front Driver Inboard 1", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 2", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 3", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 4", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 4", "ModuleNumber": "5", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 3", "ModuleNumber": "6", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 2", "ModuleNumber": "7", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 1", "ModuleNumber": "8", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName": "Rear Driver Inboard 1", "ModuleNumber": "9", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 2", "ModuleNumber": "10", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},  
+		{"ModuleName" :"Rear Passenger Inboard 2", "ModuleNumber": "11", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 1", "ModuleNumber": "12", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		], 
+	"LightbarPatterns":[]
+},
+
+
+
+{"LightbarType":"nForce Interior", 
+	"Size":"8 6", 
+	"NumModules": 14, 
+	"BoardImageFileName": "mPower-4inch",
+	"Modules":
+	[
+		{"ModuleName": "Front Driver Inboard 1", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 2", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 3", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 4", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 4", "ModuleNumber": "5", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 3", "ModuleNumber": "6", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 2", "ModuleNumber": "7", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 1", "ModuleNumber": "8", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName": "Rear Driver Inboard 1", "ModuleNumber": "9", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 2", "ModuleNumber": "10", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 3", "ModuleNumber": "11", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 3", "ModuleNumber": "12", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 2", "ModuleNumber": "13", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 1", "ModuleNumber": "14", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		], 
+	"LightbarPatterns":[]
+},
+
+{"LightbarType":"nForce Interior", 
+	"Size":"8 8", 
+	"NumModules": 16, 
+	"BoardImageFileName": "mPower-4inch",
+	"Modules":
+	[
+		{"ModuleName": "Front Driver Inboard 1", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 2", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 3", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 4", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 4", "ModuleNumber": "5", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 3", "ModuleNumber": "6", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 2", "ModuleNumber": "7", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 1", "ModuleNumber": "8", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName": "Rear Driver Inboard 1", "ModuleNumber": "9", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 2", "ModuleNumber": "10", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 3", "ModuleNumber": "11", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 4", "ModuleNumber": "12", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 4", "ModuleNumber": "13", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 3", "ModuleNumber": "14", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 2", "ModuleNumber": "15", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 1", "ModuleNumber": "16", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		], 
+	"LightbarPatterns":[]
+},
+
+
+
+{"LightbarType":"nForce Interior", 
+	"Size":"8 Interior", 
+	"NumModules": 16, 
+	"BoardImageFileName": "mPower-4inch",
+	"Modules":
+	[
+		{"ModuleName": "Front Driver Inboard 1", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 2", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 3", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 4", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 4", "ModuleNumber": "5", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 3", "ModuleNumber": "6", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 2", "ModuleNumber": "7", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 1", "ModuleNumber": "8", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName": "Rear Driver Inboard 1", "ModuleNumber": "9", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 2", "ModuleNumber": "10", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 3", "ModuleNumber": "11", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 4", "ModuleNumber": "12", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 4", "ModuleNumber": "13", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 3", "ModuleNumber": "14", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 2", "ModuleNumber": "15", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 1", "ModuleNumber": "16", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		], 
+	"LightbarPatterns":[]
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"LightbarType":"Ford Front Visor/Rear Traffic Warning", 
+	"Size":"22", 
+	"NumModules": 20, 
+	"BoardImageFileName": "mPower-4inch",
+	"Modules":
+	[
+		{"ModuleName": "Front Driver Inboard 1", "ModuleNumber": "1", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 2", "ModuleNumber": "2", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 3", "ModuleNumber": "3", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 4", "ModuleNumber": "4", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Driver Inboard 5", "ModuleNumber": "5", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 5", "ModuleNumber": "6", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 4", "ModuleNumber": "7", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 3", "ModuleNumber": "8", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 2", "ModuleNumber": "9", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Front Passenger Inboard 1", "ModuleNumber": "10", "CurrentColor":"None", "IsBreakoutLight": true, "CurrentStrength": "0"},
+		{"ModuleName": "Rear Driver Inboard 1", "ModuleNumber": "11", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 2", "ModuleNumber": "12", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 3", "ModuleNumber": "13", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 4", "ModuleNumber": "14", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Driver Inboard 5", "ModuleNumber": "15", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 5", "ModuleNumber": "16", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 4", "ModuleNumber": "17", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 3", "ModuleNumber": "18", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 2", "ModuleNumber": "19", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"}, 
+		{"ModuleName" :"Rear Passenger Inboard 1", "ModuleNumber": "20", "CurrentColor":"None", "IsBreakoutLight": false, "CurrentStrength": "0"},
+		], 
+	"LightbarPatterns":[]
+},
+
+
+]

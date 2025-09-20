@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\timva\\GitHub\\soundoffsignal-f19\\LightPatternSimulator\\LightPatternSimulator\\LightPatternSimulator.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\timva\\GitHub\\soundoffsignal-f19\\LightPatternSimulator\\LightPatternSimulator\\LightPatternSimulator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\timva\\GitHub\\soundoffsignal-f19\\LightPatternSimulator\\LightPatternSimulator\\LightPatternSimulator.csproj",
+        "projectName": "LightPatternSimulator",
+        "projectPath": "C:\\Users\\timva\\GitHub\\soundoffsignal-f19\\LightPatternSimulator\\LightPatternSimulator\\LightPatternSimulator.csproj",
+        "packagesPath": "C:\\Users\\timva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\timva\\GitHub\\soundoffsignal-f19\\LightPatternSimulator\\LightPatternSimulator\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\timva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net461": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {
+          "dependencies": {
+            "Catel.Core": {
+              "target": "Package",
+              "version": "[5.11.2, )"
+            },
+            "Extended.Wpf.Toolkit": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "HelixToolkit": {
+              "target": "Package",
+              "version": "[2.10.0, )"
+            },
+            "HelixToolkit.Wpf": {
+              "target": "Package",
+              "version": "[2.10.0, )"
+            },
+            "Microsoft.VisualStudio.Threading": {
+              "target": "Package",
+              "version": "[16.4.16, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
